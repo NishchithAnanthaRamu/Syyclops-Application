@@ -10,7 +10,7 @@ This project uses the IfcOpenShell library to process Building Information Model
 •	Clone this repository to your local machine.
 
 ```sh
-git clone https://github.com/NishchithAnanthaRamu/Ifc-BIM-processing-app---Syyclops.git
+git clone https://github.com/NishchithAnanthaRamu/Syyclops-Application.git
 ```
 
 2.	Updating the IFC file path in the script:
