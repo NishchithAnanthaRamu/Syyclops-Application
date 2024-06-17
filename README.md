@@ -7,32 +7,31 @@ This project uses the IfcOpenShell library to process Building Information Model
 ## Instructions to clone the repo and run the app
 
 1.	Clone the Repository:
-•	Clone this repository to your local machine.
-
-```sh
-git clone https://github.com/NishchithAnanthaRamu/Syyclops-Application.git
-```
+    Clone this repository to your local machine.
+    ```sh
+    git clone https://github.com/NishchithAnanthaRamu/Syyclops-Application.git
+    ```
 2. Change the directory to Syyclops-Application
 
-``` sh
-cd Syyclops-Application
-```
+    ``` sh
+    cd Syyclops-Application
+    ```
 3.	Updating the IFC file path in the script:
 
-•	Update the script to use the correct path to your IFC file.
+    Update the script to use the correct path to your IFC file.
 
 4.	Build the Docker Image:
 
-•	Build the Docker image using the provided Dockerfile.
-```sh
-docker build -t ifcopenshell-app .
-```
+    Build the Docker image using the provided Dockerfile.
+    ```sh
+    docker build -t ifcopenshell-app .
+    ```
 5.	Run the Docker Container:
 
-```sh
-docker run -d -v container_volume:/app <image_ID>
-```
-This command maps the current directory's docker volume ‘container_volume’ to the container's /app directory and hence sets the JSON's output directory.
+    ```sh
+    docker run -d -v container_volume:/app <image_ID>
+    ```
+    This command maps the current directory's docker volume ‘container_volume’ to the container's /app directory and hence sets the JSON's output directory.
 
 
 
