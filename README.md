@@ -11,7 +11,7 @@ This project uses the IfcOpenShell library to process Building Information Model
     ```sh
     git clone https://github.com/NishchithAnanthaRamu/Syyclops-Application.git
     ```
-2. Change the directory to Syyclops-Application
+2. Change the directory to Syyclops-Application:
 
     ``` sh
     cd Syyclops-Application
