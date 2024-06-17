@@ -18,6 +18,10 @@ RUN apt-get update && apt-get install -y \
     libgeos-dev \
     libgdal-dev \
     && rm -rf /var/lib/apt/lists/*
+	
+
+# Decompress the packages
+RUN tar -xJvf ifcopenshell.tar.xz
 
 # Install Python dependencies
 RUN pip install --upgrade pip
