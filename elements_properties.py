@@ -30,7 +30,7 @@ for element in elements:
                             element_data["properties"][prop.Name] = str(prop.NominalValue)
     data['building_elements'].append(element_data)
 
-# Perform simple analysis - 
+# Perform simple analysis 
 # Calculate total area of all walls
 total_wall_area = 0.0
 walls = model.by_type("IfcWall")
@@ -61,4 +61,3 @@ with open(output_path, "w") as json_file:
     json.dump(data, json_file, indent=4)
 
 print(f"Data has been successfully processed and saved to {output_path}")
-
