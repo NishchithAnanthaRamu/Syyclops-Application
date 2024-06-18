@@ -18,9 +18,9 @@ RUN apt-get update && apt-get install -y \
     libgeos-dev \
     libgdal-dev \
     && rm -rf /var/lib/apt/lists/*
-	
 
-# Decompress the packages
+
+# Decompress the package
 RUN tar -xJvf ifcopenshell.tar.xz
 
 # Install Python dependencies
@@ -37,4 +37,3 @@ ENV NAME IfcOpenShellApp
 
 # Run the application
 CMD ["sh", "-c", "python3 elements_properties.py && python3 relationships.py "]
-
